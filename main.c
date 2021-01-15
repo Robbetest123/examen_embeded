@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
         time(&rawtime);
         timeinfo = localtime(&rawtime);
         printf("Current local time and date: %s", asctime(timeinfo));
-        
+        // proberen in de file te schrijven
         fprintf(fp, "%s", asctime(timeinfo));
         fputs(asctime(timeinfo), fp);
         sleep(tijd);
